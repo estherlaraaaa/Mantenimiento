@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  
+  form(action="/materia" method="post" name="saveMateria")
+    input#id(type="text", name="id", disabled)
+    input#name(type="text", name="nombre", placeholder="Nombre")
+    input#uv(type="number", name="uv" placeholder="uv")
+    input#descripcion(type="text" name="descripcion" placeholder="Descripcion")
+    input(type="submit", value="Guardar")
+  .table
+    table 
+      thead
+        th  id
+        th Nombre
+        th Uv
+        th Descripcion
+        th Opciones
+      tbody.materias
+
+
+  script(src="/javascripts/main.js")
+
+  
+  
+
